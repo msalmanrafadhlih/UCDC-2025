@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 1023px) {
+
+    .me h1,
+    .me h2 {
+        font-size: 3em;
+    }
+    .banner .title {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .me h1,
+    .me h2 {
+        font-size: 2em;
+    }
+}
