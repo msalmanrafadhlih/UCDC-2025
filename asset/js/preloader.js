@@ -85,3 +85,27 @@ document.addEventListener("mousemove", (e) => {
   cursor.style.top = y + "px";
   bgColor.style.clipPath = `circle(75px at ${x}px ${y}px)`;
 });
+
+
+/** AUTO SUM HEIGHT BG */
+  document.querySelectorAll('.bg').forEach(div => {
+    const style = window.getComputedStyle(div);
+    const bgImage = style.backgroundImage;
+
+    // Ambil URL dari background-image: url("...")
+    const urlMatch = bgImage.match(/url\(["']?(.+?)["']?\)/);
+
+    if (urlMatch) {
+      const imageUrl = urlMatch[1];
+      const img = new Image();
+
+      img.onload = () => {
+        const aspectRatio = img.height / img.width;
+        const containerWidth = div.clientWidth;
+        const computedHeight = containerWidth * aspectRatio;
+        div.style.height = `${computedHeight}px`;
+      };
+
+      img.src = imageUrl;
+    }
+  });
