@@ -3,6 +3,30 @@
         position: absolute;
         width: var(--width);
         height: 80%;
+        gap: 10px;
+    }
+    #playBtn {
+        position: absolute;
+        bottom: 20%;
+        left: 47%;
+        z-index: 99999;
+    }
+}
 
+@media screen and (max-width: 1023px) {
+    
+    .soda{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .soda{
+        width: 250px;
+    }
+    header img{
+        display: none;
+    }
+    header .author{
+        width: 100%;
     }
 }
