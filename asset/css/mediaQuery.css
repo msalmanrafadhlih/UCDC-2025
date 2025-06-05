@@ -1,3 +1,23 @@
+
+
+@media (max-width: 1023px) {
+    
+    .soda{
+        width: 400px;
+    }
+}
+@media (max-width: 767px) {
+    .soda{
+        width: 250px;
+    }
+    header img{
+        display: none;
+    }
+    header .author{
+        width: 100%;
+    }
+}
+
 @media (max-width: 750px) {
     .banner .content {
         position: absolute;
@@ -13,20 +33,6 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 380px) {
     
-    .soda{
-        width: 400px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .soda{
-        width: 250px;
-    }
-    header img{
-        display: none;
-    }
-    header .author{
-        width: 100%;
-    }
 }
