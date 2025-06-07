@@ -12,22 +12,61 @@
 }
 
 @media (max-width: 1023px) {
-    
     .soda{
         width: 100px;
     }
+    header img{
+        height: unset;
+        width: 100%;
+    }
+    .banner .content h1{
+        font-size: 7em;
+    }
+    .banner .content{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-1 h2:nth-child(3){
+        font-size: 3em;
+    }
+    .grid{
+        display: block;
+    }
+    .grid-3{
+        font-size: 4em;
+        display: block;
+        margin-bottom: 100px;
+    }
+    .grid figure img{
+        max-width: 500px;
+    }
+    .reverse {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 500px;
+    }
+    .paragraf {
+        text-align: center;
+        max-width: 500px;
+        margin: 10px auto;
+    }
 }
-@media (max-width: 767px) {
+
+
+@media (max-width: 768px) {
     header img{
         display: none;
     }
     header .author{
         width: 100%;
     }
-}
-
-@media (max-width: 750px) {
-    .banner .content {
+    .nav {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+      .banner .content {
         position: absolute;
         width: var(--width);
         height: 80%;
@@ -41,6 +80,3 @@
     }
 }
 
-@media (max-width: 380px) {
-    
-}

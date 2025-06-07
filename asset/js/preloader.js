@@ -11,17 +11,6 @@ if (preloader) {
     }, 7000);
   });
 }
-const preloader2 = document.querySelector("#preloader2");
-if (preloader2) {
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      preloader2.classList.add("white-bg2");
-    }, 500);
-    setTimeout(() => {
-      preloader2.remove();
-    }, 4000);
-  });
-}
 
 /* ANIMATION SCROLL ---> */ function setAnimationScroll() {
   gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +47,8 @@ if (preloader2) {
 }
 setAnimationScroll();
 
-/* CURASOORR ----------> */ const cursor = document.querySelector(".cursor1");
+/* CURASOORR ----------> */ 
+const cursor = document.querySelector(".cursor1");
 document.addEventListener("mousemove", (e) => {
   const x = e.clientX;
   const y = e.clientY;
@@ -75,38 +65,5 @@ document.addEventListener("mouseup", () => {
   cursor.style.transform = "translate(-50%, -50%) scale(1)";
 });
 
-/** AUTO SUM HEIGHT BG > */ document.querySelectorAll(".bg").forEach((div) => {
-  const style = window.getComputedStyle(div);
-  const bgImage = style.backgroundImage;
-  const urlMatch = bgImage.match(/url\(["']?(.+?)["']?\)/);
-  if (urlMatch) {
-    const imageUrl = urlMatch[1];
-    const img = new Image();
-    img.onload = () => {
-      const aspectRatio = img.height / img.width;
-      const containerWidth = div.clientWidth;
-      const computedHeight = containerWidth * aspectRatio;
-      div.style.height = `${computedHeight}px`;
-    };
-    img.src = imageUrl;
-  }
-});
 
-/** MP3 ---------------> */ const playBtn = document.getElementById("musicBtn");
-const playIcon = document.getElementById("playIcon");
-const bgMusic = document.getElementById("bgMusic");
-let isPlaying = false;
-playBtn.addEventListener("click", () => {
-  if (!isPlaying) {
-    bgMusic.play();
-    playIcon.classList.remove("fa-play");
-    playIcon.classList.add("fa-pause");
-    isPlaying = true;
-  } else {
-    bgMusic.pause();
-    playIcon.classList.remove("fa-pause");
-    playIcon.classList.add("fa-play");
-    isPlaying = false;
-  }
-  bgMusic.volume = 0.1;
-});
+

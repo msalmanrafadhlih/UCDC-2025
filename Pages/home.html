@@ -1,265 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Roam</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="/asset/css/styles.css" />
-        <link rel="stylesheet" href="/asset/css/mediaQuery.css" />
-        <style> html { filter: none; } </style>
-    </head>
-    <body>
-        <button id="musicBtn"><i id="playIcon" class="fa-solid fa-play"></i></button>
-        <div  class="bg" style="background-image: url('/card/image-1.jpg'); min-height: 3686px;">
-                <header>
-                    <div class="title">
-                        <h1>PINK BEACH</h1>
-                        <img loading="lazy" src="/images/2.png" alt="">
-                    </div>
-                    <div class="author">
-                        <h3>LUN DEV</h3>
-                        <div >
-                            <p>Design By</p>
-                            <p>Lun Dev</p>
-                        </div>
-                        <div>
-                            <p>Code By</p>
-                            <p>Lun Dev</p>
-                        </div>
-                        <img loading="lazy" src="/images/code.png" alt="">
-                    </div>
-                </header>
-                <div class="banner">
-                    <div class="product">
-                        <div class="soda" style="--url: url(/images/bg.png)">
-                        </div>
-                        <div class="soda" style="--url: url(/images/bg2.png)">
-                        </div>
-                    </div>
-                    <div class="rock">
-                        <img zoom src="" alt="">
-                        <img loading="lazy" src="/images/Palm1.png" alt="">
-                        <img loading="lazy" src="/images/Palm1.png" alt="">
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/asset/css/home.css" />
+    <link rel="stylesheet" href="/asset/css/mediaQuery.css" />
+    <style>
+      html {
+        filter: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="musicBtn">
+      <i id="playIcon" class="fa-solid fa-play"></i>
+    </button>
+
+    <!-- 1 -->
+    <div
+      class="bg"
+      style="background-image: url('/images/bg/top.jpg'); min-height: 300vh"
+    >
+      <header>
+        <div class="title">
+          <h1>PINK BEACH</h1>
+          <img loading="lazy" src="/images/1.png" alt="" />
+        </div>
+        <div class="author">
+          <h3>LUN DEV</h3>
+          <div>
+            <p>Design By</p>
+            <p>Lun Dev</p>
+          </div>
+          <div>
+            <p>Code By</p>
+            <p>Lun Dev</p>
+          </div>
+          <img loading="lazy" src="/images/code.png" alt="" />
+        </div>
+      </header>
+      <div class="banner">
+        <div class="product">
+          <div class="soda" style="--url: url(/images/overlay/bg.png)"></div>
+          <div class="soda" style="--url: url(/images/overlay/bg2.png)"></div>
+        </div>
+        <div class="rock">
+          <img zoom src="" alt="" />
+          <img class="autoShow" loading="lazy" src="/images/overlay/Palm1.png" alt="" />
+          <img class="autoShow" loading="lazy" src="/images/overlay/Palm1.png" alt="" />
+        </div>
+    </div>
+    <div id="banner">
+        <div class="slider-container">
+            <div class="slider-fade">
+                <div class="slide active">
+                    <img src="/images/slide/image-1.jpg" alt="Slide 1"/>
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
                 </div>
-            <div class="inner-bg"></div>
-            <div class="nest-card">
-                    <h1>HELLO WORLD</h1>   
-                <div class="form-card">
-                    <div class="card" style="align-items: center;">
-                        <img data-zoom loading="lazy" src="/card/image-1.jpg" alt="A picture of boatsurving">
-                        <img data-zoom loading="lazy" src="/card/image-2.jpg" alt="A picture of Pink Beach">
-                    </div>
-                    <div class="card">
-                        <br>
-                        <h2>Lestarikan suasana waktu di Pantai Kuning</h2>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                            going to use a passage of <br> Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                            the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
-                            words etc.
-                        </p>
-                    </div>
+                <div class="slide">
+                    <img src="/images/slide/image-2.jpg" alt="Slide 2" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
                 </div>
-                <div class="form-card reversed">
-                    <div class="card flipped" style="align-items: center;">
-                        <img data-zoom loading="lazy" src="/card/image-1.jpg" alt="A picture of boatsurving">
-                        <img data-zoom loading="lazy" src="/card/image-2.jpg" alt="A picture of Pink Beach">
-                    </div>
-                    <div class="card">
-                        <br>
-                        <h2>Lestarikan suasana waktu di Pantai Kuning</h2>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                            going to use a passage of <br> Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                            the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
-                            words etc.
-                        </p>
-                    </div>
+                <div class="slide">
+                    <img src="/images/slide/image-3.jpg" alt="Slide 3" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-4.jpg" alt="Slide 4" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-5.jpg" alt="Slide 5" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-6.jpg" alt="Slide 6" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-7.jpg" alt="Slide 7" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-8.jpg" alt="Slide 8" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-9.jpg" alt="Slide 9" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/slide/image-10.jpg" alt="Slide 10" />
+                    <div class="caption">Halaman yang dipenuhi bunga yang bermekaran</div>
                 </div>
             </div>
-        </div>
-        <div class="bg2">
-
-        </div>
-
-            <!-- <div class="back1"> -->
-                <!-- <img src="/card/image-1.jpg" alt="" style="width: 100%; object-fit: cover; object-position: center;"> -->
-                
-            <!-- </div> -->
-        <!-- <main>
-            <div class="container">
-                <div class="bg bg1" style="background-image: url('/img/image1.jpg');">
-                    <div id="banner-bottom">
-                        <div class="lorem">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                            some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                            going to use a passage of <br> Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                            the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                            words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
-                            words etc.
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                            Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                            undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                            (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
-                            ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                            comes from a line in section 1.10.32.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing <br><br> Lorem Ipsum passages, and more recently with desktop publishing software
-                            like Aldus PageMaker including versions of Lorem Ipsum.
-                            It is a long established fact that a reader will be distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                            letters, as opposed to using <br> 'Content here, content here', making it look like readable English. Many
-                            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                            search for 'lorem ipsum' will uncover many web sites still in their infancy. <br><br> Various versions have
-                            evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                        </div>
-                        <div class="slider" reverse="true" style="
-                            --width: 200px;
-                            --height: 200px;
-                            --quantity: 9;
-                        ">  
-                            <div class="list">
-                                <div class="item" style="--position: 1"><img loading="lazy" src="/images/slider2_1.png" alt=""></div>
-                                <div class="item" style="--position: 2"><img loading="lazy" src="/images/slider2_2.png" alt=""></div>
-                                <div class="item" style="--position: 3"><img loading="lazy" src="/images/slider2_3.png" alt=""></div>
-                                <div class="item" style="--position: 4"><img loading="lazy" src="/images/slider2_4.png" alt=""></div>
-                                <div class="item" style="--position: 5"><img loading="lazy" src="/images/slider2_5.png" alt=""></div>
-                                <div class="item" style="--position: 6"><img loading="lazy" src="/images/slider2_6.png" alt=""></div>
-                                <div class="item" style="--position: 7"><img loading="lazy" src="/images/slider2_7.png" alt=""></div>
-                                <div class="item" style="--position: 8"><img loading="lazy" src="/images/slider2_8.png" alt=""></div>
-                                <div class="item" style="--position: 9"><img loading="lazy" src="/images/slider2_9.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg bg2" style="background-image: url('/img/image2.jpg');">
-                    <div class="lorem">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                        going to use a passage of <br> Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                        the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                        necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                        words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
-                        words etc.
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                        Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                        Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                        (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
-                        ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                        comes from a line in section 1.10.32.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                        Letraset sheets containing <br><br> Lorem Ipsum passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.
-                        It is a long established fact that a reader will be distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters, as opposed to using <br> 'Content here, content here', making it look like readable English. Many
-                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                        search for 'lorem ipsum' will uncover many web sites still in their infancy. <br><br> Various versions have
-                        evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </div>
-                </div>
-                <div class="bg" style="background-color: rgba(255, 255, 255, 1);">
-                    <div class="lorem">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                        going to use a passage of <br> Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                        the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                        necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                        words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
-                        words etc.
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                        Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                        Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                        (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
-                        ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                        comes from a line in section 1.10.32.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                        Letraset sheets containing <br><br> Lorem Ipsum passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.
-                        It is a long established fact that a reader will be distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters, as opposed to using <br> 'Content here, content here', making it look like readable English. Many
-                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                        search for 'lorem ipsum' will uncover many web sites still in their infancy. <br><br> Various versions have
-                        evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </div>
-                </div>
-                <div class="bg bg3" style="background-image: url('/img/image3.jpg');">
-                    <div class="lorem">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-                        going to use a passage of <br> Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                        the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                        necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                        words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
-                        words etc.
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                        Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                        Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                        (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
-                        ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                        comes from a line in section 1.10.32.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                        Letraset sheets containing <br><br> Lorem Ipsum passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.
-                        It is a long established fact that a reader will be distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters, as opposed to using <br> 'Content here, content here', making it look like readable English. Many
-                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                        search for 'lorem ipsum' will uncover many web sites still in their infancy. <br><br> Various versions have
-                        evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </div>
-                </div>
-                <audio id="bgMusic" loop><source src="/asset/snd/Backsound.mp3" type="audio/mpeg" > Your browser does not support the audio element.</audio>
+            <button class="nav prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="nav next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="contact autoShow">
+                <a href="#contact">Contact Us</a>
             </div>
-        </main> -->
-    
+        </div>
+    </div>
 
+    </div>
 
+    <!-- 2 -->
+    <div
+      class="bg"
+      style="background-image: url('/images/bg/mid.jpg'); min-height: 3400px"
+    >
+      <div id="introduce">
+        <section class="title">
+          <h2 class="autoShow">Introduce</h2>
+        </section>
 
+        <section class="grid grid-1">
+          <div class="autoShow">
+            <figure>
+              <img src="/images/card/image-1.jpg" alt="" />
+            </figure>
+          </div>
+          <div data-index class="autoShow paragraf">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen b <br data-index/>
+            ook. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum. printer took a galley of type and scrambled it to make a type
+            specimen b <br data-index/>
+            ook. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remai
+          </div>
+          <div class="autoShow">
+            <figure>
+              <img src="/images/card/image-2.jpg" alt="" />
+            </figure>
+          </div>
+          <div data-index class="autoShow reverse">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen b <br />
+            ook. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum. printer took a galley of type and scrambled it to make a type
+            specimen b <br />
+            ook. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remai
+          </div>
+        </section>
+      </div>
+      <div class="rock">
+          <img zoom src="" alt="" />
+          <img class="autoShow" loading="lazy" src="/images/overlay/Palm1.png" alt="" />
+          <img class="autoShow" loading="lazy" src="/images/overlay/Palm1.png" alt="" />
+          <img class="autoShow" loading="lazy" src="/images/overlay/Palm1.png" alt="" />
+        </div>
+      <section id="lokasi">
+        <div class="map-container">
+          <h2>Lokasi Pantai Pink</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62543653.430844985!2d57.67960690161544!3d-7.986163901749011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4e8b7d3e1b23%3A0xf558da0a9b5eef39!2sPink%20Beach%20Lombok!5e1!3m2!1sid!2sid!4v1749300617061!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </div>
+    <!-- 3 -->
+    <div class="bg"style="background-image: url('/images/bg/bottom.jpg'); min-height: 3000px">
 
-
+    </div>
 
     <!-- OPENNNN SASAMMMEEEE -->
-        <!-- <div id="preloader2"></div> -->
+    <div id="preloader2"></div>
     <!-- JOKOWI KALU PIDATO -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-        <script src="/asset/js/preloader.js"></script>
-    </body>
+    <script src="/asset/js/home.js"></script>
+  </body>
 </html>
