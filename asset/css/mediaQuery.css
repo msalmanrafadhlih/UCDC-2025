@@ -52,6 +52,9 @@
         max-width: 500px;
         margin: 10px auto;
     }
+    .map-container {
+        flex-direction: column;
+    }
 }
 
 
