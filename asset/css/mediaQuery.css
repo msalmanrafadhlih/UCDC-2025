@@ -11,7 +11,14 @@
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
+    .product {
+        top: 60vw;
+        left: 85vw;
+    }
+    .product:hover {
+        transform: rotate(10deg);
+    }
     .soda{
         width: 100px;
     }
@@ -30,6 +37,12 @@
     }
     .grid-1 h2:nth-child(3){
         font-size: 3em;
+    }    
+    .grid-1 h2:nth-child(2){
+        height: max-content;
+    }    
+    .grid-1 h2:nth-child(4){
+        height: max-content;
     }
     .grid{
         display: block;
@@ -52,18 +65,32 @@
         max-width: 500px;
         margin: 10px auto;
     }
+
     .map-container {
         flex-direction: column;
     }
 }
 
+@media (max-width: 900px) {
+  .map-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 @media (max-width: 768px) {
+    .product {
+        top: 80vw;
+        left: 60vw;
+    }
     header img{
         display: none;
     }
     header .author{
-        width: 100%;
+        width: 70%;
+        top: 5%;
+        justify-content: center;
     }
     .nav {
     font-size: 1.5rem;
@@ -83,3 +110,63 @@
     }
 }
 
+@media (max-width: 426px) {
+    header {
+        z-index: 11;
+    }
+    .author {
+        z-index: 10;
+        background-color: rgba(240, 248, 255, 0.209);
+        backdrop-filter: blur(2px);
+    }
+    .rock {
+        z-index: 9;
+    }
+    .product {
+        top: 165vw;
+        z-index: 99;
+    }
+    .author h3 {
+        opacity: 0;
+    }
+    .title h1 {
+        font-size: 20vw;
+        line-height: 0.8em;
+        background-color: rgba(240, 248, 255, 0.209);
+        backdrop-filter: blur(2px);
+    }
+}
+
+@media (max-width: 376px) {
+    .product {
+        top: 180vw;
+        left: 50vw;
+    }
+    .product:hover {
+        transform: rotate(16deg);
+    }
+    .author h3 {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 321px) {
+    .product {
+        top: 209vw;
+        z-index: 11;
+    }
+    .rock {
+        z-index: 15;
+    }
+    .rock img:nth-child(2) {
+        z-index: 15;
+        left: -40%;
+        top: 60%;
+    }
+    .rock img:nth-child(3) {
+        inset: 0;
+        left: 45%;
+        top: 90%;
+        z-index: 15;
+    }
+}

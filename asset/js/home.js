@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const slides = document.querySelectorAll(".slide");
 let currentIndex = 0;
-let interval = setInterval(nextSlide, 6000);
+let interval = setInterval(nextSlide, 15000);
 
 function showSlide(index) {
 slides.forEach((slide, i) => {
@@ -95,7 +95,22 @@ showSlide(currentIndex);
 document.querySelectorAll(".nav").forEach(btn =>
 btn.addEventListener("click", () => {
     clearInterval(interval);
-    interval = setInterval(nextSlide, 6000);
+    interval = setInterval(nextSlide, 15000);
 })
 );
 
+/** BLUR */
+
+const elements = document.querySelectorAll('.autoBLur');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.3,
+});
+
+elements.forEach(el => observer.observe(el));
