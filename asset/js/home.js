@@ -36,19 +36,32 @@ const playBtn = document.getElementById("musicBtn");
 const playIcon = document.getElementById("playIcon");
 const bgMusic = document.getElementById("bgMusic");
 let isPlaying = false;
+
+
+bgMusic.volume = 0.4;
+
 playBtn.addEventListener("click", () => {
   if (!isPlaying) {
+    bgMusic.volume = 0.4;
     bgMusic.play();
     playIcon.classList.remove("fa-play");
     playIcon.classList.add("fa-pause");
     isPlaying = true;
   } else {
-    bgMusic.pause();
-    playIcon.classList.remove("fa-pause");
-    playIcon.classList.add("fa-play");
-    isPlaying = false;
+    
+    let fadeOut = setInterval(() => {
+      if (bgMusic.volume > 0.01) {
+        bgMusic.volume -= 0.01;
+      } else {
+        clearInterval(fadeOut);
+        bgMusic.pause();
+        bgMusic.volume = 0.1;
+        playIcon.classList.remove("fa-pause");
+        playIcon.classList.add("fa-play");
+        isPlaying = false;
+      }
+    }, 50); 
   }
-  bgMusic.volume = 0.1;
 });
 
 /** AUTO SHOW ANIMATION */
@@ -114,3 +127,14 @@ const observer = new IntersectionObserver(entries => {
 });
 
 elements.forEach(el => observer.observe(el));
+
+/** CONTACT FORM */
+
+const form = document.querySelector(".subscribe-form");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); 
+
+  const email = form.elements["email"].value;
+  console.log("Email yang dimasukkan:", email);
+});

@@ -288,6 +288,7 @@ button:hover {
   transform: scale(1.5);
   animation: ZoomOut 3000ms ease-in-out 4s forwards;
 }
+
 .banner .title p {
   margin: 0;
   padding: 0;
@@ -319,12 +320,56 @@ button:hover {
   }
 }
 
-/* BUTTON */
-
 #playBtn {
   opacity: 0;
   position: absolute;
   bottom: 10%;
   left: 47%;
   z-index: 999;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .me h1,
+    .me h2 {
+        font-size: 3em;
+    }
+    .banner .title {
+        font-size: 3em;
+    }
+    .banner .content h1{
+        font-size: 7em;
+    }
+    .banner .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .me h1,
+    .me h2 {
+        font-size: 2em;
+    }
+    .banner .content {
+      position: absolute;
+      inset: 0;
+      left: 50%;
+      top: 30%;
+      width: var(--width);
+      height: 80%;
+      gap: 5px;
+    }
+    .item .hide {
+      display: none;
+    }
+  }
+
+@media (max-width: 425px) {
+  .item .hide {
+    display: none;
+  }
 }

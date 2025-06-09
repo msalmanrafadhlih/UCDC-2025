@@ -1,7 +1,44 @@
-@media (max-width: 1500px) {
+@media (max-width: 2560px) {
     .product {
-        top: 60vw;
+        top: 77vw;
         left: 50%;
+    }
+    .author {
+        max-width: 30vw;
+    }
+    .title h1 {
+        font-size: 17vw;
+    }
+    .author h3 {
+        font-size: 3vw;
+    }
+    .author p{
+        font-size: 2vw;
+    }
+    .banner img {
+        top: 43vw;
+        left: 43%;
+    }
+}
+
+@media (max-width: 1539px) {
+    .author {
+        width: 100%;
+        max-width: 700px;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .product {
+        top: 79vw;
+        left: 50%;
+    }
+    .author {
+        max-width: 700px;
+        width: 100%;
+        text-align: left;
     }
     .nest-card {
         top: 20%;
@@ -13,8 +50,11 @@
 
 @media (max-width: 1024px) {
     .product {
-        top: 60vw;
-        left: 85vw;
+        top: 83vw;
+        left: 50vw;
+    }
+    .author {
+        max-width: 500px;
     }
     .product:hover {
         transform: rotate(10deg);
@@ -26,31 +66,17 @@
         height: unset;
         width: 100%;
     }
-    .banner .content h1{
-        font-size: 7em;
-    }
-    .banner .content{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .grid-1 h2:nth-child(3){
-        font-size: 3em;
+    .grid-1 div:nth-child(3){
+        grid-row: 7;
     }    
-    .grid-1 h2:nth-child(2){
+    .grid-1 div:nth-child(2){
         height: max-content;
     }    
-    .grid-1 h2:nth-child(4){
+    .grid-1 div:nth-child(4){
         height: max-content;
     }
     .grid{
         display: block;
-    }
-    .grid-3{
-        font-size: 4em;
-        display: block;
-        margin-bottom: 100px;
     }
     .grid figure img{
         max-width: 500px;
@@ -65,48 +91,72 @@
         max-width: 500px;
         margin: 10px auto;
     }
-
+    .banner img {
+        top: 43vw;
+        left: 40%;
+    }
     .map-container {
         flex-direction: column;
+    }
+    .footer-start {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: self-start;
+    }
+    #tips, #penginapan {
+        display: none;
+    }
+    #kesimpulan, #waktu-terbaik {
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 900px) {
-  .map-container {
-    grid-template-columns: 1fr;
-  }
+    .map-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
 
 @media (max-width: 768px) {
     .product {
-        top: 80vw;
-        left: 60vw;
+        top: 104vw;
+        left: 50vw;
     }
     header img{
         display: none;
     }
     header .author{
-        width: 70%;
+        width: 50%;
         top: 5%;
-        justify-content: center;
+        text-align: left;
+    }
+    header .author h3{
+        text-align: left;
+        font-size: 4.5vw;
     }
     .nav {
-    font-size: 1.5rem;
-    padding: 8px;
-  }
-      .banner .content {
-        position: absolute;
-        width: var(--width);
-        height: 80%;
-        gap: 10px;
+        font-size: 1.5rem;
+        padding: 8px;
     }
     #playBtn {
         position: absolute;
         bottom: 20%;
         left: 47%;
         z-index: 99999;
+    }
+    .banner img {
+        top: 43vw;
+        left: 37%;
+    }
+    .title-h2 {
+      font-size: clamp(16px, 1.5vw, 1.2em);
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
     }
 }
 
@@ -116,8 +166,6 @@
     }
     .author {
         z-index: 10;
-        background-color: rgba(240, 248, 255, 0.209);
-        backdrop-filter: blur(2px);
     }
     .rock {
         z-index: 9;
@@ -132,8 +180,22 @@
     .title h1 {
         font-size: 20vw;
         line-height: 0.8em;
-        background-color: rgba(240, 248, 255, 0.209);
-        backdrop-filter: blur(2px);
+    }
+    .footer-end {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .banner img {
+        top: 80vw;
+        left: 30%;
+        min-width: 100px;
+    }
+    #kesimpulan {
+        display: none;
+    }
+    
+    .title-h2 {
+      text-align: left;
     }
 }
 
@@ -148,11 +210,20 @@
     .author h3 {
         opacity: 0;
     }
+    #kesimpulan {
+        display:block ;
+    }
+    #kesimpulan p {
+        text-align: left;
+    }
+    #waktu-terbaik {
+        display: none;
+    }
 }
 
 @media (max-width: 321px) {
     .product {
-        top: 209vw;
+        top: 205vw;
         z-index: 11;
     }
     .rock {
