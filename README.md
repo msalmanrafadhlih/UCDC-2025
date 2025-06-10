@@ -18,3 +18,5 @@ Website "Journey to Lombok: Pink Beach" dibuat untuk memperkenalkan dan mempromo
 Sub tema yang diangkat adalah **“Lingkungan dan Budaya”**, karena kami percaya bahwa teknologi digital seperti website dapat menjadi sarana edukatif dan promosi yang efektif untuk mengenalkan potensi wisata lokal kepada masyarakat luas.
 
 Manfaat dari karya ini adalah memberikan informasi yang akurat, interaktif, dan menarik bagi wisatawan lokal maupun mancanegara, serta menjadi contoh implementasi keterampilan web dasar (HTML, CSS, dan JavaScript) dalam konteks nyata.
+
+** Link demo In Repo description!
