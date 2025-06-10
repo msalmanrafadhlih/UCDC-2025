@@ -233,14 +233,14 @@ header .author div p:nth-child(2) {
 }
 .soda {
   --left: 0px;
-  background: var(--url) var(--left), url(/images/overlay/mockup.png) 0 0;
+  background: var(--url) var(--left), url(https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537818/mockup_cxqhkj.png) 0 0;
   background-size: auto 100%;
   width: 20vw;
   min-width: 220px;
   aspect-ratio: 2 / 4;
   background-blend-mode: multiply;
   transition: 0.8s;
-  mask-image: url(/images/overlay/mockup.png);
+  mask-image: url(https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537818/mockup_cxqhkj.png);
   mask-size: auto 100%;
 }
 .soda:nth-child(2) {
@@ -280,6 +280,7 @@ header .author div p:nth-child(2) {
   right: -50%;
   top: -10%;
   rotate: -25deg;
+  transform: scaleX(-1);
   transition: 0.7s;
 }
 .rock img:nth-child(4) {
