@@ -1,402 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pink Beach</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749546742/shore_hzpaw8.png">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../asset/css/home.css" />
-    <link rel="stylesheet" href="../asset/css/mediaQuery.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-      html {
-        filter: none;
-      }
-    </style>
-  </head>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantai Pink Lombok</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749546742/shore_hzpaw8.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaQuery.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bgMusic" src="../asset/snd/bgsound.wav" preload="auto"></audio>
+  <button id="musicBtn"><i id="playIcon" class="fa-solid fa-play"></i></button>
 
-  <body>
-
-    <audio id="bgMusic" src="../asset/snd/bgsound.wav" preload="auto"></audio>
-    <button id="musicBtn">
-      <i id="playIcon" class="fa-solid fa-play"></i>
-    </button>
-
-    <!-- 1 -->
-    <div class="bg" style="background-image: url('https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537008/top_t6olmp.jpg'); min-height: 300vh">
-      <header>
-        <div class="title">
-          <h1>PINK BEACH</h1>
-          <img loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537583/1_epcyis.jpg" alt="" style="display: none;"/>
+  <!-- Section 1: Hero -->
+  <div class="bg" style="background-image: url('https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537008/top_t6olmp.jpg'); min-height: 300vh">
+    <header>
+      <div class="title">
+        <h1>PINK BEACH</h1>
+      </div>
+      <div class="author">
+        <h3>PANTAI INDONESIA</h3>
+        <div>
+          <p>Created By</p>
+          <p>Moch Salman</p>
         </div>
-        <div class="author">
-          <h3>PANTAI INDONESIA</h3>
-          <div>
-            <p>Created By</p>
-            <p>Moch Salman</p>
+        <div>
+          <p>Code By</p>
+          <p>Moch Salman</p>
+        </div>
+        <img loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537474/code_ycxmhi.png" alt="Code" />
+      </div>
+    </header>
+    <div class="banner">
+      <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537345/QR_code_u8ikg9.png" alt="QR Code">
+      <div class="product">
+        <div class="soda" style="--url: url(https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537755/bg_rb3azg.png)"></div>
+        <div class="soda" style="--url: url(https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537763/bg2_zuim0s.png)"></div>
+      </div>
+      <div class="rock">
+        <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="Coconut Tree" />
+        <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="Coconut Tree" />
+      </div>
+    </div>
+    <div id="banner">
+      <div class="slider-container">
+        <div class="slider-fade">
+          <div class="slide active"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538285/image-2_b2rizs.jpg" alt="Slide 1"/></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538172/image-1_fclrpv.jpg" alt="Slide 2" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538150/image-4_kag22h.jpg" alt="Slide 3" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538167/image-3_t54ivt.jpg" alt="Slide 4" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538165/image-5_xyeplw.jpg" alt="Slide 5" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538309/image-6_ch4eup.jpg" alt="Slide 6" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538138/image-7_iaeoog.jpg" alt="Slide 7" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538239/image-8_ypd1gy.jpg" alt="Slide 8" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538142/image-9_ztaqic.jpg" alt="Slide 9" /></div>
+          <div class="slide"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538154/image-10_tt93he.jpg" alt="Slide 10" /></div>
+          <button class="nav prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="nav next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+          <div class="contact autoShow">
+            <a href="#footer">Contact Us</a>
           </div>
-          <div>
-            <p>Code By</p>
-            <p>Moch Salman</p>
-          </div>
-          <img loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537474/code_ycxmhi.png" alt="" />
-        </div>
-      </header>
-      <div class="banner">
-        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537345/QR_code_u8ikg9.png" alt="QR Code">
-        <div class="product">
-          <div class="soda" style="--url: url(https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537755/bg_rb3azg.png)"></div>
-          <div class="soda" style="--url: url(https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537763/bg2_zuim0s.png)"></div>
-        </div>
-        <div class="rock">
-          <img zoom src="" alt="" />
-                <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="" />
-                <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="" />
         </div>
       </div>
-      <div id="banner">
-          <div class="slider-container">
-              <div class="slider-fade">
-                    <div class="slide active">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538285/image-2_b2rizs.jpg" alt="Slide 1"/>
-                        <div class="caption">
-                          <h1>Pantai Pink di Lombok<br> - Keajaiban Alam Tropis yang Memukau</h1>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538172/image-1_fclrpv.jpg" alt="Slide 2" />
-                        <div class="caption">
-                          <h2>Lautan yang berwarna pink</h2>
-                          <h3>Serpihan karang teroksidasi bercampur pasir putih menciptakan warna merah muda yang unik dan memesona.</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538150/image-4_kag22h.jpg" alt="Slide 3" />
-                        <div class="caption">
-                          <h2 style="color: black;">Menjadikannya salah satu Destinasi yang Unik</h2>
-                          <h3>Pantai Pink Lombok menawarkan pengalaman yang berbeda dari pantai-pantai lainnya di Indonesia</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538167/image-3_t54ivt.jpg" alt="Slide 4" />
-                        <div class="caption">
-                          <h2>Menjadikan salah satu Destinasi yang Unik</h2>
-                          <h3>Pantai Pink Lombok menawarkan pengalaman yang berbeda dari pantai-pantai lainnya di Indonesia</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538165/image-5_xyeplw.jpg" alt="Slide 5" />
-                        <div class="caption">
-                          <h2>Langit pink Dikala Sunset</h2>
-                          <h3>Menyuguhkan pemandangan pasir kemerahan muda yang unik berpadu dengan air laut biru kehijauan dan tebing karang yang mempesona.</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538309/image-6_ch4eup.jpg" alt="Slide 6" />
-                        <div class="caption">
-                          <h2>Aktifitas seru Menanti</h2>
-                          <h3>Berbagai aktivitas menarik yang bisa Anda nikmati di Pantai Pink Lombok</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538138/image-7_iaeoog.jpg" alt="Slide 7" />
-                        <div class="caption">
-                          <h2>Ekosistem Terjaga</h2>
-                          <h3>Terumbu karang yang subur dan kehidupan laut yang beragam, termasuk penyu yang sesekali muncul.</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538239/image-8_ypd1gy.jpg" alt="Slide 8" />
-                        <div class="caption">
-                          <h2>Air Laut Jernih</h2>
-                          <h3>Gradasi warna biru kehijauan dengan kejernihan luar biasa, sempurna untuk snorkeling dan berenang.</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538142/image-9_ztaqic.jpg" alt="Slide 9" />
-                        <div class="caption">
-                          <h2 style="color: black;">Pemandangan yang Memikat</h2>
-                          <h3>Menyuguhkan pemandangan pasir kemerahan muda yang unik berpadu dengan air laut biru kehijauan dan tebing karang yang mempesona.</h3>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538154/image-10_tt93he.jpg" alt="Slide 10" />
-                        <div class="caption">
-                          <h2>Spot Fotografi Eksotis</h2>
-                          <h3>Latar tebing karang dan pasir pink menciptakan komposisi foto yang tak akan terlupakan.</h3>
-                    </div>
-                </div>
-                <button class="nav prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="nav next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
-                <div class="contact autoShow">
-                    <a href="#footer">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
     </div>
+  </div>
 
-    <!-- 2 -->
-    <div class="bg"style="background-image: url('https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537113/mid_ugwpfm.jpg'); min-height: 3400px">
-          <div id="introduce">
-            <section class="title">
-              <h2 class="autoShow">Introduce</h2>
-            </section>
-
-            <section class="grid grid-1">
-              <div class="autoShow">
-                <figure>
-                  <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537393/image-1_a315tq.jpg" alt="" />
-                </figure>
-              </div>
-              <div data-index class="autoShow paragraf">
-                Terletak di Desa Sekaroh, Kecamatan Jerowaru, Kabupaten Lombok Timur, 
-                Pantai Pink menyuguhkan pemandangan pasir kemerahan muda yang unik berpadu 
-                dengan air laut biru kehijauan dan tebing karang yang mempesona. <br/>
-                Pasir di Pantai Pink memiliki warna merah muda lembut yang unik, 
-                berasal dari serpihan karang yang teroksidasi bercampur dengan butiran pasir putih. 
-                Saat sinar matahari menyinari, pasir ini berkilau seperti butiran kristal, 
-                menciptakan sensasi magis seperti karpet merah alam. <br>
-                Tekstur pasirnya halus di telapak kaki, dengan warna merah muda yang kontras indah dengan warna laut di sekitarnya. 
-                Momen matahari terbit dan terbenam memberikan efek dramatis, 
-                saat sinar jingga memantul di atas pasir, membentuk pemandangan seperti puisi lukisan alam.
-              </div>
-              <div class="autoShow">
-                <figure>
-                  <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537469/image-2_gnp6bc.jpg" alt="" />
-                </figure>
-              </div>
-              <div data-index class="autoShow reverse">
-                Pantai Pink menawarkan suasana tenang dan damai, jauh dari keramaian destinasi wisata populer. 
-                Pada hari kerja atau pagi hari, hanya segelintir pengunjung yang menikmati keheningan sambil menunggu matahari terbit.<br>
-                Suara ombak yang memecah di bibir pantai berpadu dengan desir angin sepoi-sepoi di antara pepohonan lontar. 
-                Siapapun bisa bersantai di atas tikar atau kursi pantai sambil membaca buku atau mendengarkan musik santai.<br>
-                Jika beruntung, Kamu dapat melihat sekawanan penyu laut yang mendekat ke perairan dangkal, 
-                menandakan ekosistem laut di sekitar Pantai Pink masih terjaga dengan sangat baik.
-              </div>
-            </section>
-          </div>
-            <div class="rock">
-                <img zoom src="" alt="" />
-                <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="" />
-                <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="" />
-                <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="" />
-            </div>
-            <div class="gallery-parents">
-                <h2>Galeri Foto</h2>
-                <p>Saksikan keindahan Pantai Pink Lombok melalui koleksi foto-foto menakjubkan</p>
-
-                <div class="gallery-wrapper">
-                  <div class="slider" reverse="true" style="
-                      --width: 300px;
-                      --height: 400px;
-                      --quantity: 9;
-                  ">
-                      <div class="list">
-                          <div class="item" style="--position: 1"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538824/img1_ji8jjz.jpg" alt=""></div>
-                          <div class="item" style="--position: 2"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538822/img2_ij1aro.webp" alt=""></div>
-                          <div class="item" style="--position: 3"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538828/img3_rjexkp.jpg" alt=""></div>
-                          <div class="item" style="--position: 4"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538948/img4_sncrsm.webp" alt=""></div>
-                          <div class="item" style="--position: 5"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538836/img5_yzp0rk.webp" alt=""></div>
-                          <div class="item" style="--position: 6"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538826/img6_rmpovp.jpg" alt=""></div>
-                          <div class="item" style="--position: 7"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538836/img7_plumbe.jpg" alt=""></div>
-                          <div class="item" style="--position: 8"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538819/img8_skv2qc.jpg" alt=""></div>
-                          <div class="item" style="--position: 9"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538772/img9_saetnq.webp" alt=""></div>
-                          <div class="item" style="--position: 9"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538768/img10_gdha0c.jpg" alt=""></div>
-                      </div>
-                  </div>
-                </div>
-            </div>
+  <!-- Section 2: Introduction & Gallery -->
+  <div class="bg" style="background-image: url('https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537113/mid_ugwpfm.jpg'); min-height: 3400px">
+    <div id="introduce">
+      <section class="title">
+        <h2 class="autoShow">Introduce</h2>
+      </section>
+      <section class="grid grid-1">
+        <div class="autoShow">
+          <figure>
+            <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537393/image-1_a315tq.jpg" alt="Pantai Pink" />
+          </figure>
+        </div>
+        <div data-index class="autoShow paragraf">
+          Terletak di Desa Sekaroh, Kecamatan Jerowaru, Kabupaten Lombok Timur, Pantai Pink menyuguhkan pemandangan pasir kemerahan muda yang unik berpadu dengan air laut biru kehijauan dan tebing karang yang mempesona.<br/>
+          Pasir di Pantai Pink memiliki warna merah muda lembut yang unik, berasal dari serpihan karang yang teroksidasi bercampur dengan butiran pasir putih. Saat sinar matahari menyinari, pasir ini berkilau seperti butiran kristal, menciptakan sensasi magis seperti karpet merah alam.<br>
+          Tekstur pasirnya halus di telapak kaki, dengan warna merah muda yang kontras indah dengan warna laut di sekitarnya. Momen matahari terbit dan terbenam memberikan efek dramatis, saat sinar jingga memantul di atas pasir, membentuk pemandangan seperti puisi lukisan alam.
+        </div>
+        <div class="autoShow">
+          <figure>
+            <img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537469/image-2_gnp6bc.jpg" alt="Pantai Pink" />
+          </figure>
+        </div>
+        <div data-index class="autoShow reverse">
+          Pantai Pink menawarkan suasana tenang dan damai, jauh dari keramaian destinasi wisata populer. Pada hari kerja atau pagi hari, hanya segelintir pengunjung yang menikmati keheningan sambil menunggu matahari terbit.<br>
+          Suara ombak yang memecah di bibir pantai berpadu dengan desir angin sepoi-sepoi di antara pepohonan lontar. Siapapun bisa bersantai di atas tikar atau kursi pantai sambil membaca buku atau mendengarkan musik santai.<br>
+          Jika beruntung, Kamu dapat melihat sekawanan penyu laut yang mendekat ke perairan dangkal, menandakan ekosistem laut di sekitar Pantai Pink masih terjaga dengan sangat baik.
+        </div>
+      </section>
     </div>
-
-
-
-
-
-    <!-- 3 -->
-    <div class="bg"style="background-image: url('https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537050/bottom_fqav1b.jpg'); min-height: 3800px">
-      <section id="lokasi">
-        <h2 class="autoShow">Panduan Perjalanan</h2> 
-        <div class="map-container">
-          <div class="frame autoShow">
-            <h3>Dari Kawasan Utama Lombok (Bandara Internasional Lombok)</h3><br>
-              <ol>
-                <li>
-                  <strong>Via Jalan Darat (Kendaraan Pribadi atau Sewa):</strong> Jarak sekitar 82 km, ditempuh 2,5–3 jam. Rute: Bandara → Praya → Penujak → Pringgabaya → Jerowaru → Desa Sekaroh → Pantai Pink. Jalan beraspal baik hingga Jerowaru, kemudian bergelombang dan tanah.
-                </li>
-                <li>
-                  <strong>Via Transportasi Umum:</strong> Dari Bandara naik bus/travel ke Praya atau Selong, lanjut angkot jurusan Mantang–Kelayu, berhenti di pertigaan Desa Sekaroh, lalu sewa ojek atau ojek online ke Pantai Pink (4–5 km).
-                </li>
-              </ol>
-              <br>
-            <h3>Dari Kawasan Senggigi atau Kuta (Lombok Selatan)</h3>
-              <p>Jarak sekitar 100–110 km. Rute umum: Senggigi → Mataram → Cakranegara → Kekalik → Praya → Jerowaru → Sekaroh. Banyak pelancong menginap semalam di Kuta Lombok sebelum melanjutkan perjalanan ke Pantai Pink.</p>
-          </div>
-          <iframe class="autoShow"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62543653.430844985!2d57.67960690161544!3d-7.986163901749011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4e8b7d3e1b23%3A0xf558da0a9b5eef39!2sPink%20Beach%20Lombok!5e1!3m2!1sid!2sid!4v1749300617061!5m2!1sid!2sid"
-            width="100%"
-            height="100%"
-            max-height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-
-      <section id="waktu-terbaik">
-        <h2 class="title-h2">Pilihan Waktu Terbaik Berkunjung</h2>
-        <div class="grd grid-3">
-          <div class="card autoShow">
-            <h3>Musim Kemarau (April–September)</h3>
-            <p>Cuaca kering dengan angin sejuk, laut tenang memudahkan snorkeling dan berenang. Puncak kunjungan Juli–Agustus, datang pagi untuk menghindari keramaian.</p>
-          </div>
-          <div class="card autoShow">
-            <h3>Hindari Musim Hujan (Oktober–Maret)</h3>
-            <p>Curah hujan tinggi terutama Desember–Januari, gelombang besar membatasi aktivitas air. Namun, pemandangan tetap menawan dan suasana sepi.</p>
-          </div>
-          <div class="card autoShow">
-            <h3>Hari Biasa vs. Akhir Pekan/Libur Nasional</h3>
-            <p>Pantai lebih sepi hari kerja (Selasa–Kamis). Libur nasional dan akhir pekan ramai, fasilitas sewa dan parkir lebih padat.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="tips" style="background: var(--white-light); border-radius: 0.75rem;">
-        <h2 class="title-h2">Tips dan Etika Berkunjung</h2>
-        <div class="article-list grd grid-2">
-          <article class="autoShow">
-            <h3>Bawa Perlengkapan Dasar Sendiri</h3>
-            <ul>
-              <li>Topi, kacamata hitam, dan sunblock SPF tinggi untuk perlindungan dari sinar matahari.</li>
-              <li>Sepatu pantai (water shoes) untuk melindungi kaki dari karang tajam dan bebatuan.</li>
-              <li>Botol minum sendiri untuk mengurangi sampah plastik; air mineral tersedia di warung lokal.</li>
-            </ul>
-          </article>
-          <article class="autoShow">
-            <h3>Hormati Lingkungan dan Alam Sekitar</h3>
-            <ul>
-              <li>Jangan tinggalkan sampah plastik atau bekas makanan di pantai.</li>
-              <li>Hindari memetik karang atau membawa pulang batu pink sebagai suvenir.</li>
-              <li>Jaga jarak aman dengan biota laut, jangan menyentuh terumbu karang atau penyu.</li>
-            </ul>
-          </article>
-          <article class="autoShow">
-            <h3>Berkordinasi dengan Warga Lokal</h3>
-            <ul>
-              <li>Patuhi instruksi nelayan saat menggunakan perahu.</li>
-              <li>Interaksi ramah dengan warga membuka peluang belajar budaya dan kuliner khas.</li>
-            </ul>
-          </article>
-          <article class="autoShow">
-            <h3>Siapkan Uang Tunai</h3>
-            <p>Beberapa warung dan fasilitas mungkin tidak memiliki akses internet stabil, jadi sediakan uang tunai dalam nominal kecil untuk pembayaran.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="penginapan" class="autoShow">
-        <h2 class="title-h2">Penginapan dan Kuliner Sekitar</h2>
-        <div class="grd grid-2">
-          <article>
-            <h3>Penginapan</h3>
-            <ul>
-              <li><strong>Homestay dan Guesthouse Lokal:</strong> Pengalaman otentik, harga bersahabat, sarapan ala desa.</li>
-              <li><strong>Resort Sederhana:</strong> Pemandangan sunrise, fasilitas AC dan kolam renang kecil.</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Kuliner Khas</h3>
-            <ul>
-              <li><strong>Ikan Bakar Segar:</strong> Dibakar dengan sambal matah khas Lombok.</li>
-              <li><strong>Plecing Kangkung dan Tahu Kok:</strong> Sambal terasi dan tahu goreng lembut.</li>
-              <li><strong>Sate Rembiga dan Bebalung:</strong> Sate sapi pedas dan sup iga berkuah rempah.</li>
-            </ul>
-          </article>
-        </div>
-        <div class="img-kuliner">
-            <img class="source-img" src="https://storage.googleapis.com/a1aa/image/46e2e810-aeea-4ebd-71cd-376f68c70558.jpg" alt="Homestay tradisional Lombok" />
-            <img class="source-img" src="https://storage.googleapis.com/a1aa/image/51fef806-09da-490b-c783-50252ba1be8d.jpg" alt="Ikan bakar Lombok" />
-          </div>
-      </section>
-
-      <section id="kesimpulan" class="text-center autoShow">
-        <h2 class="title-h2">Kesimpulan: Pengalaman Tak Terlupakan di Pink Beach</h2>
-        <p>Pantai Pink di Lombok menghadirkan kombinasi eksotis: alam yang jarang ditemui, budaya lokal yang hangat, dan atmosfer tropis yang damai.</p>
-        <ul class="inline-list">
-          <li><strong>Keindahan Visual:</strong><br><p>Pasir pink, tebing, dan air gradasi biru.</p></li>
-          <li><strong>Relaksasi dan Petualangan:</strong><br> <p>Snorkeling, menjelajah mangrove.</p></li>
-          <li><strong>Kehangatan Komunitas:</strong> <p>Penduduk ramah, kuliner otentik.</p></li>
-        </ul>
-        <p>Rencanakan dengan baik, patuhi etika wisata, dan nikmati keunikan Pantai Pink Lombok.</p>
-        <a href="#keunikan" class="btn">Mulai Petualangan Anda</a>
-      </section>
-
-      <!-- FOOTER -->
-
-        <div id="footer">
-          <div class="footer-start">
-            <section class="about autoShow">
-                <h3>Pantai Pink Lombok</h3><br>
-                <p>Destinasi wisata alam yang menakjubkan dengan pasir berwarna pink yang unik. Nikmati keindahan tropis yang memukau di salah satu pantai terindah di Indonesia.</p>
-                <button><i class="fa-brands fa-facebook"></i></button>
-                <button><i class="fa-brands fa-instagram"></i></button>
-                <button><i class="fa-brands fa-x-twitter"></i></i></button>
-            </section>
-            
-            <section class="information autoShow">
-              <h4>Pantai Populer di Indonesia</h4><br>
-              <ul> 
-                <li><a href="#">NihIwatu Beach, NTT</a></li>
-                <li><a href="#">Pulau Weh, Aceh</a></li>
-                <li><a href="#">Raja Ampat, Papua Barat</a></li>
-                <li><a href="#">Tomini Bay, Sulawesi Utara</a></li>
-                <li><a href="#">Pantai Ora, Maluku Tengah</a></li>
-              </ul>
-            </section>
-
-            <section class="contact-footer autoShow">
-              <h4>Kontak</h4><br>
-              <div class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p> Desa Sekaroh, Kec. Jerowaru, Lombok Timur, NTB</p>
-              </div>
-              <div class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <p> +62 812-3456-7890</p>
-              </div>
-              <div class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <p> info@pantaipinklombok.com</p>
-              </div>
-            </section>  
-
-          </div>
-          <div class="footer-mid">
-            <h3>Dapatkan Update Terbaru</h3>
-            <p>Dapatkan Notifikasi email terkait hal terbaru tentang pantai Lombok Pink</p><br>
-            <form class="subscribe-form" action="#" method="POST">
-              <input type="email" name="email" placeholder="Masukkan email Anda" required />
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
-          <div class="footer-end">
-            <p>&copy 2025. Pantai pink Lombok.</p>
-            <p>Created by <a href="#"><strong> Msalmanrafadhlih</strong></a></p>
-          </div>
-        </div>
+    <div class="rock">
+      <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="Coconut Tree" />
+      <img class="autoShow" loading="lazy" src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749541458/Pngtree_coconut_tree_20459701_fkoztn.png" alt="Coconut Tree" />
     </div>
+    <div class="gallery-parents">
+      <h2>Galeri Foto</h2>
+      <p>Saksikan keindahan Pantai Pink Lombok melalui koleksi foto-foto menakjubkan</p>
+      <div class="gallery-wrapper">
+        <div class="slider" style="--width: 300px; --height: 400px; --quantity: 10;">
+          <div class="list">
+            <div class="item" style="--position: 1"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538824/img1_ji8jjz.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538822/img2_ij1aro.webp" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538828/img3_rjexkp.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538948/img4_sncrsm.webp" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538836/img5_yzp0rk.webp" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538826/img6_rmpovp.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538836/img7_plumbe.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538819/img8_skv2qc.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538772/img9_saetnq.webp" alt=""></div>
+            <div class="item" style="--position: 10"><img src="https://res.cloudinary.com/dyzwam9dh/image/upload/v1749538768/img10_gdha0c.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- OPENNNN SASAMMMEEEE -->
-    <div id="preloader2"></div>
-    <!-- JOKOWI KALU PIDATO -->
-    <script src="../asset/js/home.js"></script>
-  </body>
+  <!-- Section 3: Info & Footer -->
+  <div class="bg" style="background-image: url('https://res.cloudinary.com/dyzwam9dh/image/upload/v1749537050/bottom_fqav1b.jpg'); min-height: 3800px">
+    <section id="lokasi">
+      <h2 class="autoShow">Panduan Perjalanan</h2>
+      <div class="map-container">
+        <div class="frame autoShow">
+          <h3>Dari Kawasan Utama Lombok (Bandara Internasional Lombok)</h3>
+          <ol>
+            <li>
+              <strong>Via Jalan Darat (Kendaraan Pribadi atau Sewa):</strong> Jarak sekitar 82 km, ditempuh 2,5–3 jam. Rute: Bandara → Praya → Penujak → Pringgabaya → Jerowaru → Desa Sekaroh → Pantai Pink. Jalan beraspal baik hingga Jerowaru, kemudian bergelombang dan tanah.
+            </li>
+            <li>
+              <strong>Via Transportasi Umum:</strong> Dari Bandara naik bus/travel ke Praya atau Selong, lanjut angkot jurusan Mantang–Kelayu, berhenti di pertigaan Desa Sekaroh, lalu sewa ojek atau ojek online ke Pantai Pink (4–5 km).
+            </li>
+          </ol>
+          <h3>Dari Kawasan Senggigi atau Kuta (Lombok Selatan)</h3>
+          <p>Jarak sekitar 100–110 km. Rute umum: Senggigi → Mataram → Cakranegara → Kekalik → Praya → Jerowaru → Sekaroh. Banyak pelancong menginap semalam di Kuta Lombok sebelum melanjutkan perjalanan ke Pantai Pink.</p>
+        </div>
+        <iframe class="autoShow"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62543653.430844985!2d57.67960690161544!3d-7.986163901749011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4e8b7d3e1b23%3A0xf558da0a9b5eef39!2sPink%20Beach%20Lombok!5e1!3m2!1sid!2sid!4v1749300617061!5m2!1sid!2sid"
+          width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="waktu-terbaik">
+      <h2 class="title-h2">Pilihan Waktu Terbaik Berkunjung</h2>
+      <div class="grd grid-3">
+        <div class="card autoShow">
+          <h3>Musim Kemarau (April–September)</h3>
+          <p>Cuaca kering dengan angin sejuk, laut tenang memudahkan snorkeling dan berenang. Puncak kunjungan Juli–Agustus, datang pagi untuk menghindari keramaian.</p>
+        </div>
+        <div class="card autoShow">
+          <h3>Hindari Musim Hujan (Oktober–Maret)</h3>
+          <p>Curah hujan tinggi terutama Desember–Januari, gelombang besar membatasi aktivitas air. Namun, pemandangan tetap menawan dan suasana sepi.</p>
+        </div>
+        <div class="card autoShow">
+          <h3>Hari Biasa vs. Akhir Pekan/Libur Nasional</h3>
+          <p>Pantai lebih sepi hari kerja (Selasa–Kamis). Libur nasional dan akhir pekan ramai, fasilitas sewa dan parkir lebih padat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" style="background: var(--white-light); border-radius: 0.75rem;">
+      <h2 class="title-h2">Tips dan Etika Berkunjung</h2>
+      <div class="article-list grd grid-2">
+        <article class="autoShow">
+          <h3>Bawa Perlengkapan Dasar Sendiri</h3>
+          <ul>
+            <li>Topi, kacamata hitam, dan sunblock SPF tinggi untuk perlindungan dari sinar matahari.</li>
+            <li>Sepatu pantai (water shoes) untuk melindungi kaki dari karang tajam dan bebatuan.</li>
+            <li>Botol minum sendiri untuk mengurangi sampah plastik; air mineral tersedia di warung lokal.</li>
+          </ul>
+        </article>
+        <article class="autoShow">
+          <h3>Hormati Lingkungan dan Alam Sekitar</h3>
+          <ul>
+            <li>Jangan tinggalkan sampah plastik atau bekas makanan di pantai.</li>
+            <li>Hindari memetik karang atau membawa pulang batu pink sebagai suvenir.</li>
+            <li>Jaga jarak aman dengan biota laut, jangan menyentuh terumbu karang atau penyu.</li>
+          </ul>
+        </article>
+        <article class="autoShow">
+          <h3>Berkordinasi dengan Warga Lokal</h3>
+          <ul>
+            <li>Patuhi instruksi nelayan saat menggunakan perahu.</li>
+            <li>Interaksi ramah dengan warga membuka peluang belajar budaya dan kuliner khas.</li>
+          </ul>
+        </article>
+        <article class="autoShow">
+          <h3>Siapkan Uang Tunai</h3>
+          <p>Beberapa warung dan fasilitas mungkin tidak memiliki akses internet stabil, jadi sediakan uang tunai dalam nominal kecil untuk pembayaran.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="penginapan" class="autoShow">
+      <h2 class="title-h2">Penginapan dan Kuliner Sekitar</h2>
+      <div class="grd grid-2">
+        <article>
+          <h3>Penginapan</h3>
+          <ul>
+            <li><strong>Homestay dan Guesthouse Lokal:</strong> Pengalaman otentik, harga bersahabat, sarapan ala desa.</li>
+            <li><strong>Resort Sederhana:</strong> Pemandangan sunrise, fasilitas AC dan kolam renang kecil.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Kuliner Khas</h3>
+          <ul>
+            <li><strong>Ikan Bakar Segar:</strong> Dibakar dengan sambal matah khas Lombok.</li>
+            <li><strong>Plecing Kangkung dan Tahu Kok:</strong> Sambal terasi dan tahu goreng lembut.</li>
+            <li><strong>Sate Rembiga dan Bebalung:</strong> Sate sapi pedas dan sup iga berkuah rempah.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="img-kuliner">
+        <img class="source-img" src="https://storage.googleapis.com/a1aa/image/46e2e810-aeea-4ebd-71cd-376f68c70558.jpg" alt="Homestay tradisional Lombok" />
+        <img class="source-img" src="https://storage.googleapis.com/a1aa/image/51fef806-09da-490b-c783-50252ba1be8d.jpg" alt="Ikan bakar Lombok" />
+      </div>
+    </section>
+
+    <section id="kesimpulan" class="text-center autoShow">
+      <h2 class="title-h2">Kesimpulan: Pengalaman Tak Terlupakan di Pink Beach</h2>
+      <p>Pantai Pink di Lombok menghadirkan kombinasi eksotis: alam yang jarang ditemui, budaya lokal yang hangat, dan atmosfer tropis yang damai.</p>
+      <ul class="inline-list">
+        <li><strong>Keindahan Visual:</strong><br><p>Pasir pink, tebing, dan air gradasi biru.</p></li>
+        <li><strong>Relaksasi dan Petualangan:</strong><br> <p>Snorkeling, menjelajah mangrove.</p></li>
+        <li><strong>Kehangatan Komunitas:</strong> <p>Penduduk ramah, kuliner otentik.</p></li>
+      </ul>
+      <p>Rencanakan dengan baik, patuhi etika wisata, dan nikmati keunikan Pantai Pink Lombok.</p>
+      <a href="#keunikan" class="btn">Mulai Petualangan Anda</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-start">
+        <section class="about autoShow">
+          <h3>Pantai Pink Lombok</h3>
+          <p>Destinasi wisata alam yang menakjubkan dengan pasir berwarna pink yang unik. Nikmati keindahan tropis yang memukau di salah satu pantai terindah di Indonesia.</p>
+          <button><i class="fa-brands fa-facebook"></i></button>
+          <button><i class="fa-brands fa-instagram"></i></button>
+          <button><i class="fa-brands fa-x-twitter"></i></button>
+        </section>
+        <section class="information autoShow">
+          <h4>Pantai Populer di Indonesia</h4>
+          <ul>
+            <li><a href="#">Nihiwatu Beach, NTT</a></li>
+            <li><a href="#">Pulau Weh, Aceh</a></li>
+            <li><a href="#">Raja Ampat, Papua Barat</a></li>
+            <li><a href="#">Tomini Bay, Sulawesi Utara</a></li>
+            <li><a href="#">Pantai Ora, Maluku Tengah</a></li>
+          </ul>
+        </section>
+        <section class="contact-footer autoShow">
+          <h4>Kontak</h4>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Desa Sekaroh, Kec. Jerowaru, Lombok Timur, NTB</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+62 812-3456-7890</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>info@pantaipinklombok.com</p>
+          </div>
+        </section>
+      </div>
+      <div class="footer-mid">
+        <h3>Dapatkan Update Terbaru</h3>
+        <p>Dapatkan notifikasi email terkait hal terbaru tentang Pantai Pink Lombok</p>
+        <form class="subscribe-form" action="#" method="POST">
+          <input type="email" name="email" placeholder="Masukkan email Anda" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-end">
+        <p>&copy; 2025 Pantai Pink Lombok.</p>
+        <p>Created by <a href="#"><strong>Msalmanrafadhlih</strong></a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
