@@ -1,19 +1,14 @@
-/* PRELOADING ---------> */ 
-const preloader =
-  document.querySelector("#preloader");
-if (preloader) {
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      preloader.classList.add("loaded");
-      preloader.classList.add("white-bg");
-    }, 2000);
-  });
-} 
+// Preloader
+const preloader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+  setTimeout(() => preloader.classList.add("loaded"), 2000);
+  setTimeout(() => preloader.remove(), 3000);
+});
 
-/* ANIMATION SCROLL ---> */ 
+// GSAP Animation
 function setAnimationScroll() {
   gsap.registerPlugin(ScrollTrigger);
-  let runAnimation = gsap.timeline({
+  gsap.timeline({
     scrollTrigger: {
       trigger: "#bg_city",
       start: "top top",
@@ -21,41 +16,28 @@ function setAnimationScroll() {
       scrub: 1.5,
       pin: true,
     },
-  });
-  runAnimation
-    .to("body", { cursor: "none" })
-    .to("#playBtn", { opacity: 0, ease: "power2.out", duration: 2 })
-    .to("#bg_city img", { scale: 1.1, ease: "power2.out", duration: 2 }, "<")
-    .to(".content", { y: -20, scale: 1.2, ease: "power2.out", duration: 2 }, "<")
-    .to(".h-pink", { opacity: 0, duration: 2 }, "<")
-    .to(".content", { y: -50, scale: 1.5, ease: "power2.inOut", duration: 2 }, "<")
-    .to("#bg_city img", { scale: 1.3, ease: "power2.inOut", duration: 2 }, "<")
-    .to(".hide", { opacity: 0, duration: 2, ease: "power1.out" })
-    .to(
-      ".content",
-      { opacity: 1, scale: 2, color: "black", duration: 2, ease: "power1.out" },
-      "<"
-    )
-    .to("#bg_city img", { opacity: 0, duration: 2 }, "<")
-    .to(".content .title", { opacity: 1, duration: 4 })
-    .to("html", { filter: "none", duration: 2 })
-    .to("body", { cursor: "default", duration: 2 }, "<")
-    .to(".cursor1", { display: "none", duration: 2 }, "<")
-    .to(".cursor1", { display: "none", duration: 2 }, "<")
-    .to("#playBtn", { y: 0, opacity: 1, duration: 2 }, "<");
+  })
+    .to("#playBtn", { opacity: 0, duration: 1 })
+    .to("#bg_city img", { scale: 1.1, duration: 1 }, "<")
+    .to(".content", { y: 5, scale: 1.1, duration: 1 }, "<")
+    .to(".h-pink", { opacity: 0, duration: 1 }, "<")
+    .to(".content", { scale: 1.2, duration: 1 })
+    .to("#bg_city img", { scale: 1.2, duration: 1 }, "<")
+    .to(".hide", { opacity: 0, duration: 1 })
+    .to(".content", { opacity: 1, scale: 1.5, color: "black", duration: 1 }, "<")
+    .to("#bg_city img", { opacity: 0, duration: 1 }, "<")
+    .to(".content .title", { opacity: 1, duration: 2 })
+    .to("body", { cursor: "default", duration: 1 }, "<")
+    .to(".cursor1", { display: "none", duration: 1 }, "<")
+    .to("#playBtn", { y: 0, opacity: 1, duration: 1 }, "<");
 }
 setAnimationScroll();
 
-/* CURASOORR ----------> */ 
+// Custom Cursor
 const cursor = document.querySelector(".cursor1");
 document.addEventListener("mousemove", (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
-  if (typeof bgColor !== "undefined") {
-    bgColor.style.clipPath = `circle(75px at ${x}px ${y}px)`;
-  }
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
 });
 document.addEventListener("mousedown", () => {
   cursor.style.transform = "translate(-50%, -50%) scale(0.8)";
