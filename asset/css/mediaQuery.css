@@ -1,243 +1,229 @@
 @media (max-width: 2560px) {
-    .product {
-        top: 77vw;
-        left: 50%;
-    }
-    .author {
-        max-width: 30vw;
-    }
-    .title h1 {
-        font-size: 17vw;
-    }
-    .author h3 {
-        font-size: 3vw;
-    }
-    .author p{
-        font-size: 2vw;
-    }
-    .banner img {
-        top: 43vw;
-        left: 43%;
-    }
+  .product {
+    top: 77vw;
+    left: 50%;
+  }
+  .author {
+    max-width: 30vw;
+  }
+  .title h1 {
+    font-size: 17vw;
+  }
+  .author h3 {
+    font-size: 3vw;
+  }
+  .author p {
+    font-size: 2vw;
+  }
+  .banner img {
+    top: 43vw;
+    left: 43%;
+  }
 }
-
 @media (max-width: 1539px) {
-    .author {
-        width: 100%;
-        max-width: 700px;
-        text-align: left;
-    }
+  .author {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+  }
 }
-
-
 @media (max-width: 1440px) {
-    .product {
-        top: 79vw;
-        left: 50%;
-    }
-    .author {
-        max-width: 700px;
-        width: 100%;
-        text-align: left;
-    }
-    .nest-card {
-        top: 20%;
-    }
-    div.bg2 {
-        z-index: 0;
-    }
+  .product {
+    top: 79vw;
+    left: 50%;
+  }
+  .author {
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+  }
+  .nest-card {
+    top: 20%;
+  }
+  div.bg2 {
+    z-index: 0;
+  }
 }
-
 @media (max-width: 1024px) {
-    .product {
-        top: 83vw;
-        left: 50vw;
-    }
-    .author {
-        max-width: 500px;
-    }
-    .product:hover {
-        transform: rotate(10deg);
-    }
-    .soda{
-        width: 100px;
-    }
-    header img{
-        height: unset;
-        width: 100%;
-    }
-    .grid-1 div:nth-child(3){
-        grid-row: 7;
-    }    
-    .grid-1 div:nth-child(2){
-        height: max-content;
-    }    
-    .grid-1 div:nth-child(4){
-        height: max-content;
-    }
-    .grid{
-        display: block;
-    }
-    .grid figure img{
-        max-width: 500px;
-    }
-    .reverse {
-        text-align: center;
-        margin: 10px auto;
-        max-width: 500px;
-    }
-    .paragraf {
-        text-align: center;
-        max-width: 500px;
-        margin: 10px auto;
-    }
-    .banner img {
-        top: 43vw;
-        left: 40%;
-    }
-    .map-container {
-        flex-direction: column;
-    }
-    .footer-start {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: self-start;
-    }
-    #tips, #penginapan {
-        display: none;
-    }
-    #kesimpulan, #waktu-terbaik {
-        margin-top: 20px;
-    }
+  .paragraf,
+  .reverse {
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+  .product {
+    top: 83vw;
+    left: 50vw;
+  }
+  .author,
+  .grid figure img {
+    max-width: 500px;
+  }
+  .product:hover {
+    transform: rotate(10deg);
+  }
+  .soda {
+    width: 100px;
+  }
+  header img {
+    height: unset;
+    width: 100%;
+  }
+  .grid-1 div:nth-child(3) {
+    grid-row: 7;
+  }
+  .grid-1 div:nth-child(2),
+  .grid-1 div:nth-child(4) {
+    height: max-content;
+  }
+  .grid {
+    display: block;
+  }
+  .banner img {
+    top: 43vw;
+    left: 40%;
+  }
+  .map-container {
+    flex-direction: column;
+  }
+  .footer-start {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-start;
+  }
+  #penginapan,
+  #tips {
+    display: none;
+  }
+  #kesimpulan,
+  #waktu-terbaik {
+    margin-top: 20px;
+  }
 }
-
 @media (max-width: 900px) {
-    .map-container {
-        grid-template-columns: 1fr;
-    }
+  .map-container {
+    grid-template-columns: 1fr;
+  }
 }
-
-
-
 @media (max-width: 768px) {
-    .product {
-        top: 104vw;
-        left: 50vw;
-    }
-    header img{
-        display: none;
-    }
-    header .author{
-        width: 50%;
-        top: 5%;
-        text-align: left;
-    }
-    header .author h3{
-        text-align: left;
-        font-size: 4.5vw;
-    }
-    .nav {
-        font-size: 1.5rem;
-        padding: 8px;
-    }
-    #playBtn {
-        position: absolute;
-        bottom: 20%;
-        left: 47%;
-        z-index: 99999;
-    }
-    .banner img {
-        top: 43vw;
-        left: 37%;
-    }
-    .title-h2 {
-      font-size: clamp(16px, 1.5vw, 1.2em);
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
-    }
+  .product {
+    top: 104vw;
+    left: 50vw;
+  }
+  header img {
+    display: none;
+  }
+  header .author {
+    width: 50%;
+    top: 5%;
+    text-align: left;
+  }
+  header .author h3 {
+    text-align: left;
+    font-size: 4.5vw;
+  }
+  .nav {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+  #playBtn {
+    position: absolute;
+    bottom: 20%;
+    left: 47%;
+    z-index: 99999;
+  }
+  .banner img {
+    top: 43vw;
+    left: 37%;
+  }
+  .title-h2 {
+    font-size: clamp(16px, 1.5vw, 1.2em);
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
 }
-
 @media (max-width: 426px) {
-    header {
-        z-index: 11;
-    }
-    .author {
-        z-index: 10;
-    }
-    .rock {
-        z-index: 9;
-    }
-    .product {
-        top: 165vw;
-        z-index: 99;
-    }
-    .author h3 {
-        opacity: 0;
-    }
-    .title h1 {
-        font-size: 20vw;
-        line-height: 0.8em;
-    }
-    .footer-end {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    .banner img {
-        top: 80vw;
-        left: 30%;
-        min-width: 100px;
-    }
-    #kesimpulan {
-        display: none;
-    }
-    
-    .title-h2 {
-      text-align: left;
+  header {
+    z-index: 11;
+  }
+  .author {
+    z-index: 10;
+  }
+  .rock {
+    z-index: 9;
+  }
+  .product {
+    top: 165vw;
+    z-index: 99;
+  }
+  .author h3 {
+    opacity: 0;
+  }
+  .title h1 {
+    font-size: 20vw;
+    line-height: 0.8em;
+  }
+  .footer-end {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .banner img {
+    top: 80vw;
+    left: 30%;
+    min-width: 100px;
+  }
+  #kesimpulan {
+    display: none;
+  }
+  .title-h2 {
+    text-align: left;
+  }
+    .rock img:nth-child(2),
+    .rock img:nth-child(3) {
+    left: 40%;
     }
 }
 
 @media (max-width: 376px) {
-    .product {
-        top: 180vw;
-        left: 50vw;
-    }
-    .product:hover {
-        transform: rotate(16deg);
-    }
-    .author h3 {
-        opacity: 0;
-    }
-    #kesimpulan {
-        display:block ;
-    }
-    #kesimpulan p {
-        text-align: left;
-    }
-    #waktu-terbaik {
-        display: none;
-    }
+  .product {
+    top: 180vw;
+    left: 50vw;
+  }
+  .product:hover {
+    transform: rotate(16deg);
+  }
+  .author h3 {
+    opacity: 0;
+  }
+  #kesimpulan {
+    display: block;
+  }
+  #kesimpulan p {
+    text-align: left;
+  }
+  #waktu-terbaik {
+    display: none;
+  }
 }
-
 @media (max-width: 321px) {
-    .product {
-        top: 205vw;
-        z-index: 11;
-    }
-    .rock {
-        z-index: 15;
-    }
-    .rock img:nth-child(2) {
-        z-index: 15;
-        left: -40%;
-        top: 60%;
-    }
-    .rock img:nth-child(3) {
-        inset: 0;
-        left: 45%;
-        top: 90%;
-        z-index: 15;
-    }
+  .product {
+    top: 205vw;
+    z-index: 11;
+  }
+  .rock {
+    z-index: 15;
+  }
+  .rock img:nth-child(1) {
+    z-index: 15;
+    left: -40%;
+    top: 60%;
+  }
+  .rock img:nth-child(2) {
+    inset: 0;
+    left: 45%;
+    top: 90%;
+    z-index: 15;
+  }
 }

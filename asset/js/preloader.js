@@ -1,4 +1,5 @@
-/* PRELOADING ---------> */ const preloader =
+/* PRELOADING ---------> */ 
+const preloader =
   document.querySelector("#preloader");
 if (preloader) {
   window.addEventListener("load", () => {
@@ -6,13 +7,11 @@ if (preloader) {
       preloader.classList.add("loaded");
       preloader.classList.add("white-bg");
     }, 2000);
-    setTimeout(() => {
-      preloader.remove();
-    }, 7000);
   });
-}
+} 
 
-/* ANIMATION SCROLL ---> */ function setAnimationScroll() {
+/* ANIMATION SCROLL ---> */ 
+function setAnimationScroll() {
   gsap.registerPlugin(ScrollTrigger);
   let runAnimation = gsap.timeline({
     scrollTrigger: {
@@ -27,9 +26,9 @@ if (preloader) {
     .to("body", { cursor: "none" })
     .to("#playBtn", { opacity: 0, ease: "power2.out", duration: 2 })
     .to("#bg_city img", { scale: 1.1, ease: "power2.out", duration: 2 }, "<")
-    .to(".content", { y: 5, scale: 1.2, ease: "power2.out", duration: 2 }, "<")
+    .to(".content", { y: -20, scale: 1.2, ease: "power2.out", duration: 2 }, "<")
     .to(".h-pink", { opacity: 0, duration: 2 }, "<")
-    .to(".content", { scale: 1.5, ease: "power2.inOut", duration: 2 })
+    .to(".content", { y: -50, scale: 1.5, ease: "power2.inOut", duration: 2 }, "<")
     .to("#bg_city img", { scale: 1.3, ease: "power2.inOut", duration: 2 }, "<")
     .to(".hide", { opacity: 0, duration: 2, ease: "power1.out" })
     .to(
